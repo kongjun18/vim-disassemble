@@ -1,0 +1,46 @@
+
+disassemble.txt            Plugin for disassembling C/C++ code
+
+==============================================================================
+CONTENTS                                                  *DisassembleContents*
+
+    1.Intro                                       *Disassemble*
+    2.Installation                                *DisassembleInstallation*
+    3.Mappings                                    *DisassembleMappings*
+    4.Commands                                    *DisassembleCommands*
+    5.Options                                     *DisassembleOptions*
+    6.Usage                                       *DisassembleUsage*
+    7.TODO                                        *DisassembleTODO*
+
+==============================================================================
+1. Intro                                                         Disassemble
+
+
+==============================================================================
+
+Note~
+- Only tested with GNU toolchain on GNU/Linux(Fedora 33)
+
+
+Options~
+|---------------------------+-----------------------------------------------------------------|
+| variable                  | meaning                                                         |
+|---------------------------+-----------------------------------------------------------------|
+| disassemble_compiler      | compiler command                                                |
+| disassemble_objdump       | objdump command                                                 |
+| disassemble_compile_flags  | flags used to compile source code                               |
+| disassemble_objdump_flags | flags used to disassemble executable                            |
+| disassemble_source        | whether or not to generate assembly file from compiler directly |
+| disassemble_directory     | place all intermidate files in it                               |
+| disassemble_executable    | disassemble this executable directly                            |
+| disassemble_loaded        | whether or not to load this plugin                              |
+| disassemble_no_command    | whether or not to create command :Disassemble                   |
+|---------------------------+-----------------------------------------------------------------|
+
+TODO~
+1. support visual mode selection
+3. use asynchronous API
+4. compile source code only when buffer is modified
+2. support float window???
+
+ vim:tw=78:ts=8:noet:ft=help:norl:
